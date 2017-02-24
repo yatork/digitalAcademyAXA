@@ -2,7 +2,6 @@ __author__ = 'hamouy'
 
 
 def match_ends(words):
-    # +++your code here+++
     compt = 0
     for word in words:
         len_word = len(word)
@@ -13,6 +12,13 @@ def match_ends(words):
 
 
 def front_x(words):
-
-    # +++your code here+++
-    return
+    list1 = words
+    list2=[]
+    for word in words:
+        if word[0] == "x":
+            list2.append(word)
+            list1.remove(word)
+            continue
+    list1 = sorted(list1)
+    list2 = sorted(list2)
+    return list2 + list1
