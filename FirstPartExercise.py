@@ -12,7 +12,7 @@ def match_ends(words):
 
 
 def front_x(words):
-    list1 = words
+    list1 = list(words)
     list2=[]
     for word in words:
         if word[0] == "x":
